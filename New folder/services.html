@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: black;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  /* Styling for the links */
+  
+  a {
+ text-decoration: none;
+    color: #fff;
+    margin-right: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+
+#logo{
+    font-size: 35px;
+    margin-right: 180px;
+    color: white;
+    font-weight: 200px;
+    font-style: italic;
+  }
+  .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 35px;
+            font-weight: 300px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .service h3 {
+            margin-top: 10px;
+            color: black;
+        }
+        .service p {
+            color: black;
+        }
+        @media (max-width: 768px) {
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>   
+<header>
+    <nav>
+      <ul>
+        <li id="logo">Camping</li>
+        <li><a href="home.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a></li>
+        <li><a href="about us1.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About us</a></li>
+        <li><a href="services.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Services</a></li>
+        <li><a href="contactus.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact us</a></li>
+      </ul>
+    </nav>
+    </header>
+
+       <div class="container">
+        <h1>Our Services</h1>
+        <div class="services">
+            <div class="service">
+                <h3>Camping Guide</h3>
+                <p>Expert guidance on the best camping spots and how to get the most out of your outdoor experience.</p>
+            </div>
+            <div class="service">
+                <h3>Gear Rental</h3>
+                <p>High-quality camping gear available for rent, ensuring you have everything you need for your trip.</p>
+            </div>
+            <div class="service">
+                <h3>Guided Tours</h3>
+                <p>Join our guided tours led by experienced guides to explore the best nature trails and campsites.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+      // JavaScript to handle hover effect
+      function changeColor(element) {
+        element.style.backgroundColor = '#555';
+      }
+      
+      function resetColor(element) {
+        element.style.backgroundColor = '';
+      }
+    </script>        
+</body>
+</html>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #333;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  /* Styling for the links */
+  
+  a {
+ text-decoration: none;
+    color: #fff;
+    margin-right: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  #logo{
+    font-size: 35px;
+    margin-right: 180px;
+    color: white;
+    font-weight: 200px;
+    font-style: italic;
+  }
+  
+  .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+          
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            font-style: italic;
+            font-size: 40px;
+            font-weight: 300px;
+        }
+        p {
+            line-height: 1.6;
+            color: black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>       
+<header>
+    <nav>
+      <ul>
+        <li id="logo">Camping</li>
+        <li><a href="home.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a></li>
+        <li><a href="about us1.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About us</a></li>
+        <li><a href="services.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Services</a></li>
+        <li><a href="contactus.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact us</a></li>
+      </ul>
+    </nav>
+    </header>
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Welcome to our camping website! We are dedicated to providing the best camping experiences for adventurers of all kinds. Whether you are a seasoned camper or a first-timer, our goal is to make your outdoor adventures memorable and enjoyable.</p>
+      <p>Our team consists of experienced outdoor enthusiasts who are passionate about nature and the great outdoors. We believe in promoting responsible camping practices to preserve the beauty of our natural environment for future generations.</p>
+      <p>We offer a wide range of camping tips, guides, and product recommendations to help you plan your perfect camping trip. From choosing the right gear to finding the best camping spots, we've got you covered.</p>
+      <p>Thank you for visiting our website. We hope you find the resources and inspiration you need to embark on your next adventure!</p>
+  </div>
+    
+    <script>
+      // JavaScript to handle hover effect
+      function changeColor(element) {
+        element.style.backgroundColor = '#555';
+      }
+      
+      function resetColor(element) {
+        element.style.backgroundColor = '';
+      }
+    </script>        
+</body>
+</html>
+</html>

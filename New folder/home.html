@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color:black;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 30px;
+    
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  /* Styling for the links */
+  a {
+ text-decoration: none;
+    color: #fff;
+    margin-right: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  #logo{
+    font-size: 40px;
+    margin-right: 300px;
+    color: white;
+    font-weight: 200px;
+    font-style: italic;
+  }
+  .hero{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-style: sans-serif;
+  }
+  button{
+    text-align: center;
+    margin-left: 600px;
+    padding: 10px 24px;
+    font-size: 20px;
+    background-color:black ;
+    color: #fff;
+    border-radius: 15px;
+  }
+  body{
+    background-image: url(pexels-jeremy.jpg);
+    background-size: 1500px 800px;
+  }
+  footer{
+    text-align: center;
+    position: relative;
+    top: 350px;
+    font-size: 30px;
+    color: white;
+  }
+  </style>
+  </head>
+    <body>
+        <header>
+        <nav>
+          <ul>
+            <li id="logo">Camping</li>
+            <li><a href="home.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a></li>
+            <li><a href="about us1.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About us </a></li>
+            <li><a href="services.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Services</a></li>
+            <li><a href="contactus.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact us</a></li>
+          </ul>
+        </nav>
+        </header>
+        <section id="home">
+            <div class="hero">
+                <h1>Enjoy your holidays</h1>
+            </div>
+            <button>Book now</button>
+        </section>
+        <footer>
+          <p>&copy; 2024 Camping Adventure. All rights reserved.</p>
+      </footer>
+        
+        <script>
+          // JavaScript to handle hover effect
+          function changeColor(element) {
+            element.style.backgroundColor = '#555';
+          }
+          
+          function resetColor(element) {
+            element.style.backgroundColor = '';
+          }
+        </script>
+        
+        
+    
+</body>
+</html>

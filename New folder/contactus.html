@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: black;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  /* Styling for the links */
+  
+  a {
+ text-decoration: none;
+    color: #fff;
+    margin-right: 60px;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+
+#logo{
+    font-size: 35px;
+    margin-right: 180px;
+    color: white;
+    font-weight: 200px;
+}
+.container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {  
+          margin-bottom: 5px;
+        }
+          input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            margin-bottom: 5px;
+        }
+        
+</style>
+</head>
+<body>   
+<header>
+    <nav>
+      <ul>
+        <li id="logo">Camping</li>
+        <li><a href="home.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a></li>
+        <li><a href="about us1.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About us</a></li>
+        <li><a href="services.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Services</a></li>
+        <li><a href="contactus.html" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact us</a></li>
+      </ul>
+    </nav>
+    </header>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Submit">
+      </form>
+  </div>
+    
+    <script>
+      // JavaScript to handle hover effect
+      function changeColor(element) {
+        element.style.backgroundColor = '#555';
+      }
+      
+      function resetColor(element) {
+        element.style.backgroundColor = '';
+      }
+    </script>        
+</body>
+</html>
+
+    
+</body>
+</html>
